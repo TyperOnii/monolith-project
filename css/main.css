@@ -336,7 +336,7 @@ h1,
 h2,
 h3,
 h4 {
-  font-weight: 500;
+  font-weight: 600;
 }
 
 h1 {
@@ -731,6 +731,9 @@ h4 {
   left: 0;
 }
 
+.special-project {
+  margin-bottom: 30px;
+}
 .special-project__header {
   margin-bottom: 37px;
 }
@@ -806,4 +809,125 @@ h4 {
 .footer__links {
   display: flex;
   gap: 30px;
+}
+.calculate-section {
+  position: relative;
+  margin-bottom: 200px;
+}
+.calculate-section__header {
+  position: relative;
+  background-image: url("/source/images/calc-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 562px;
+}
+.calculate-section__header::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.calculate-section__inner {
+  padding-top: 32px;
+}
+.calculate-section__title {
+  position: relative;
+  color: var(--color-white);
+  max-width: 1015px;
+  z-index: 10;
+}
+.calculate-section__banner {
+  background-color: white;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  box-shadow: 0px 4px 33px 0px rgba(0, 0, 0, 0.17);
+  padding: 16px 13px 40px;
+  z-index: 100;
+  top: 100%;
+}
+.calculate-section__banner-title {
+  text-align: center;
+  margin-bottom: 35px;
+}
+.calculate-section__cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  justify-content: space-between;
+}
+.calculate-section__card:not(:last-child) {
+  padding-right: 10px;
+}
+.calculate-section__card-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.calculate-section__card-image {
+  margin-bottom: 37px;
+}
+.calculate-section__card-title {
+  text-align: center;
+}
+.calculate-section__card-description {
+  margin-bottom: 8px;
+  text-align: center;
+}
+.calculate-section__actions {
+  display: flex;
+  justify-self: center;
+  right: 0;
+  top: -76px;
+  position: absolute;
+}
+.calculate-section__button {
+  height: 76px;
+}
+.calculate-section__button:first-child {
+  color: white;
+}
+
+.partners {
+  margin-bottom: 80px;
+}
+.partners__header-title {
+  text-align: center;
+  margin-bottom: 25px;
+}
+.partners__body {
+  box-shadow: 0px 2px 17px 0px rgba(0, 0, 0, 0.14);
+}
+.partners__images {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, max-content));
+  align-items: center;
+  justify-content: space-between;
+  padding-block: 20px;
+  row-gap: 20px;
+}
+.partners__image {
+  padding: 5px;
+}
+
+.payments__header-title {
+  text-align: center;
+  margin-bottom: 23px;
+}
+.payments__body {
+  box-shadow: 0px 2px 17px 0px rgba(0, 0, 0, 0.14);
+}
+.payments__images {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, max-content));
+  align-items: center;
+  justify-content: center;
+  padding-block: 20px;
+  column-gap: 100px;
+  row-gap: 20px;
 }/*# sourceMappingURL=main.css.map */
