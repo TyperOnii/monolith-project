@@ -1,0 +1,54 @@
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 25px;
+  &__item {
+  }
+}
+.card {
+  &__image {
+    @include desktop {
+      height: auto;
+    }
+    @include mobile {
+      width: 100%;
+    }
+  }
+
+  &__floor-information {
+  }
+
+  &__information {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    margin-bottom: 10px;
+  }
+
+  &__title {
+    color: var(--color-black);
+  }
+
+  &__price {
+    @include fluid-text(50, 30);
+  }
+
+  &__description {
+    @include fluid-text(20, 16);
+    margin-bottom: 15px;
+  }
+
+  &__actions {
+    display: flex;
+    column-gap: 10px;
+  }
+
+  &__button {
+    &:first-child {
+      max-width: 68px;
+    }
+    &:last-child {
+      max-width: 100%;
+    }
+  }
+}

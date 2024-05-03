@@ -1,0 +1,89 @@
+.button {
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  color: var(--color-white);
+  border: none;
+  transition-duration: var(--transition-duration);
+  @include tablet {
+    height: 67px;
+  }
+}
+.button-show {
+  padding-inline: 30px;
+}
+.button--accent {
+  background-color: var(--color-accent);
+}
+.button-order {
+  padding-inline: 18px;
+  color: var(--color-black);
+
+  @include hover {
+    box-shadow: var(--box-shadow-light);
+  }
+
+  &:active {
+    color: var(--color-accent);
+    background-color: var(--color-white);
+    box-shadow: var(--box-shadow-light);
+  }
+}
+.button-details {
+  height: 71px;
+  max-width: 440px;
+  column-gap: 15px;
+  flex: 1 1 100%;
+  &::after {
+    display: flex;
+    align-items: center;
+    content: ">";
+    width: 5px;
+    height: 8px;
+  }
+}
+.button-price {
+  height: 76px;
+  padding-inline: 42px;
+}
+.button-look {
+  height: 76px;
+  color: var(--color-black);
+  padding-inline: 25px;
+  @include hover {
+    box-shadow: var(--box-shadow-light);
+  }
+  &:active {
+    color: var(--color-accent);
+    background-color: var(--color-white);
+    box-shadow: var(--box-shadow-light);
+  }
+}
+.button-submit {
+  height: 58px;
+  padding-inline: 190px;
+}
+.button-buy {
+  max-width: 205px;
+  width: 100%;
+  height: 71px;
+  padding: 5px 10px;
+  background-color: transparent;
+  border: 1px solid rgb(193, 193, 193);
+}
+
+.button-show,
+.button-details,
+.button-price,
+.button-submit {
+  @include hover {
+    box-shadow: var(--box-shadow-accent);
+  }
+  &:active {
+    color: var(--color-accent);
+    background-color: var(--color-white);
+    box-shadow: var(--box-shadow-light);
+  }
+}

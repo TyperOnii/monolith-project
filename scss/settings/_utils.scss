@@ -1,0 +1,40 @@
+.visually-hidden {
+  @include visually-hidden;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.main {
+  flex: 1 0 auto;
+}
+
+.container {
+  margin-inline: auto;
+  max-width: calc(var(--container-width) + var(--container-padding-x) * 2);
+  padding-inline: var(--container-padding-x);
+}
+
+.container-header {
+  margin-inline: auto;
+  max-width: calc(
+    var(--container-header-width) + var(--container-padding-x) * 2
+  );
+  padding-inline: var(--container-padding-x);
+  @include mobile {
+    padding-inline: 0;
+  }
+}
+
+.hidden-mobile {
+  @include mobile {
+    display: none !important;
+  }
+}
+.visible-mobile {
+  @include mobile-above {
+    display: none !important;
+  }
+}

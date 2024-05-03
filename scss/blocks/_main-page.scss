@@ -1,0 +1,51 @@
+.main {
+}
+.main-page {
+  min-height: 100vh;
+  background-image: url("/source/images/main-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  &__wrapper {
+    padding-top: 142px;
+    padding-bottom: 47px;
+    height: 100vh;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__title {
+    max-width: 1043px;
+    margin-bottom: 40px;
+  }
+
+  &__description {
+    color: var(--color-dark-blue);
+    font-size: 20px;
+    max-width: 350px;
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 30px;
+    position: relative;
+    margin-top: auto;
+    @include mobile {
+      column-gap: 0px;
+      width: 100vw;
+    }
+  }
+  &__button {
+    @include fluid-text(18, 16);
+    @include mobile {
+      &:first-child {
+        max-width: 250px;
+      }
+    }
+  }
+}

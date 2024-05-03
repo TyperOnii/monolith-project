@@ -1,0 +1,16 @@
+@import "settings/normalize";
+@import "settings/fonts";
+@import "settings/vars";
+@import "settings/mixins";
+@import "settings/media";
+@import "settings/components";
+@import "settings/global";
+@import "settings/utils";
+
+@import "blocks/header";
+@import "blocks/main-page";
+@import "blocks/catalog";
+@import "blocks/card";
+@import "blocks/our-services";
+@import "blocks/special-project";
+@import "blocks/footer";
