@@ -359,10 +359,6 @@ h4 {
   font-size: clamp(18px, 1.3888888889vw, 20px);
 }
 
-* {
-  outline: 2px solid green;
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;
