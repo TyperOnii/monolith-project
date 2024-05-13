@@ -24,7 +24,7 @@
   }
 
   &__filter-item {
-    @include fluid-text(35, 20);
+    @include fluid-text(35, 18);
     width: 100%;
     text-align: center;
     padding: 10px;
@@ -32,6 +32,9 @@
     background: rgb(255, 255, 255);
     @include mobile {
       padding: 5px;
+    }
+    @include mobile-s {
+      padding: 0;
     }
   }
 
