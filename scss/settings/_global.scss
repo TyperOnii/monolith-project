@@ -24,6 +24,7 @@ h2,
 h3,
 h4 {
   font-weight: 500;
+  color: var(--color-dark-blue);
 }
 h1 {
   @include fluid-text(60, 30);

@@ -1,0 +1,104 @@
+.form-section {
+  &__inner {
+    display: flex;
+    justify-content: center;
+    column-gap: 60px;
+    align-items: center;
+    @include desktop {
+      column-gap: 20px;
+    }
+  }
+
+  &__img {
+    @media (max-width: 1400px) {
+      & {
+        width: 50%;
+        height: auto;
+      }
+    }
+    @include mobile {
+      display: none;
+    }
+  }
+}
+.form {
+  &__main-page {
+  }
+
+  &__fieldset {
+  }
+
+  &__legend {
+    margin-bottom: 25px;
+    @include tablet {
+      margin-bottom: 10px;
+    }
+    @include mobile {
+      text-align: center;
+    }
+  }
+
+  &__title {
+  }
+
+  &__description {
+    @include fluid-text(22, 18);
+    font-weight: 400;
+    color: black;
+    margin-bottom: 25px;
+    @include tablet {
+      margin-bottom: 15px;
+    }
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+    margin-bottom: 20px;
+    @include tablet {
+      row-gap: 10px;
+    }
+  }
+  &__list-item {
+    display: flex;
+    flex-grow: 1;
+  }
+
+  &__label {
+  }
+
+  &__input {
+    height: var(--input-height);
+    width: 100%;
+    max-width: 480px;
+    padding-left: 20px;
+    @include tablet {
+      max-width: 350px;
+    }
+    @include mobile {
+      max-width: 100%;
+    }
+  }
+
+  &__notification {
+    @include fluid-text(18, 16);
+    max-width: 470px;
+    margin-top: 20px;
+    @include tablet {
+      margin-top: 10px;
+      max-width: 350px;
+    }
+    @include mobile {
+      text-align: center;
+      max-width: 100%;
+    }
+  }
+  &__button {
+    @include tablet {
+      min-width: 350px;
+    }
+    @include mobile {
+      min-width: 100%;
+    }
+  }
+}

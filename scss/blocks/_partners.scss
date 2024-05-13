@@ -1,5 +1,11 @@
 .partners {
-  margin-bottom: 80px;
+  margin-block: 80px;
+  @include tablet {
+    margin-block: 40px;
+  }
+  @include mobile {
+    margin-block: 30px;
+  }
   &__header {
   }
 
