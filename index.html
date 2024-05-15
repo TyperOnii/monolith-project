@@ -19,22 +19,33 @@
             height="57"
             src="/source/icons/logo.svg"
             alt="monolith"
-            class="header__logo"
+            class="header__logo visible-mobile"
+          />
+          <img
+            width="52"
+            height="57"
+            src="/source/icons/logo.svg"
+            alt="monolith"
+            class="header__logo hidden-mobile"
           />
           <!-- Меню для шапки (на компьютере) -->
           <nav class="header__menu menu hidden-mobile">
             <ul class="menu__list">
               <li class="menu__item">
-                <a href="/" class="menu__link">Каталог проектов</a>
+                <a href="./pages/catalog.html" class="menu__link"
+                  >Каталог проектов</a
+                >
               </li>
               <li class="menu__item">
-                <a href="/" class="menu__link">О компании</a>
+                <a href="./pages/about-company.html" class="menu__link"
+                  >О компании</a
+                >
               </li>
               <li class="menu__item">
-                <a href="/" class="menu__link">Услуги</a>
+                <a href="./pages/services.html" class="menu__link">Услуги</a>
               </li>
               <li class="menu__item">
-                <a href="/" class="menu__link">Аккаунт</a>
+                <a href="./pages/account" class="menu__link">Аккаунт</a>
               </li>
             </ul>
           </nav>
@@ -55,7 +66,7 @@
                 </a>
               </li>
               <li class="mobile-bar__item">
-                <a href="/" class="mobile-bar__link">
+                <a href="./pages/about-company.html" class="mobile-bar__link">
                   <span class="mobile-bar__link-wrapper">
                     <img
                       width="27"
@@ -68,7 +79,7 @@
                 </a>
               </li>
               <li class="mobile-bar__item">
-                <a href="/" class="mobile-bar__link">
+                <a href="./pages/services.html" class="mobile-bar__link">
                   <span class="mobile-bar__link-wrapper">
                     <img
                       width="27"
@@ -81,7 +92,7 @@
                 </a>
               </li>
               <li class="mobile-bar__item">
-                <a href="/" class="mobile-bar__link">
+                <a href="./pages/catalog" class="mobile-bar__link">
                   <span class="mobile-bar__link-wrapper">
                     <img
                       width="27"
@@ -94,7 +105,7 @@
                 </a>
               </li>
               <li class="mobile-bar__item">
-                <a href="/" class="mobile-bar__link">
+                <a href="./pages/basket" class="mobile-bar__link">
                   <span class="mobile-bar__link-wrapper">
                     <img
                       width="27"
@@ -107,7 +118,7 @@
                 </a>
               </li>
               <li class="mobile-bar__item">
-                <a href="/" class="mobile-bar__link">
+                <a href="./pages/account" class="mobile-bar__link">
                   <span class="mobile-bar__link-wrapper">
                     <img
                       width="27"
@@ -122,7 +133,11 @@
             </ul>
           </nav>
           <!-- Кнопка для перехода в корзину (на компьютере) -->
-          <button class="header__button button hidden-mobile" type="button">
+          <a
+            href="./pages/basket.html"
+            class="header__button button hidden-mobile"
+            type="button"
+          >
             <svg
               width="20.000000"
               height="22.000000"
@@ -142,7 +157,7 @@
                 stroke-linecap="round"
               />
             </svg>
-          </button>
+          </a>
         </div>
       </header>
       <!-- Конец шапки -->
@@ -1316,5 +1331,6 @@
     </div>
     <!-- Скрипты -->
     <script src="script.js"></script>
+    <script src="tabs.js"></script>
   </body>
 </html>
