@@ -511,7 +511,7 @@ h4 {
 }
 .main-page {
   min-height: 100vh;
-  background-image: url("/source/images/main-bg.png");
+  background-image: url("../source/images/main-bg.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -637,7 +637,7 @@ h4 {
 .catalog__look-more-text:after {
   position: absolute;
   content: "";
-  background-image: url("/source/icons/Arrow-right.svg");
+  background-image: url("../source/icons/Arrow-right.svg");
   background-repeat: no-repeat;
   width: 81px;
   height: 15px;
@@ -944,7 +944,7 @@ h4 {
 }
 .calculate-section__header {
   position: relative;
-  background-image: url("/source/images/calc-bg.png");
+  background-image: url("../source/images/calc-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 562px;
