@@ -1,4 +1,5 @@
 .account {
+  margin-top: 130px;
   font-weight: 500;
   @include fluid-text(20, 18);
   &__inner {
@@ -71,6 +72,9 @@
     justify-content: space-between;
     align-items: center;
     column-gap: 10px;
+    @include mobile-s {
+      column-gap: 5px;
+    }
   }
 
   &__download-input {
@@ -82,15 +86,26 @@
       padding-left: 10px;
     }
     @include mobile-s {
-      min-width: 220px;
+      min-width: 200px;
     }
   }
   &__download-button {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: none;
-
+    height: 53px;
+    width: 53px;
     background-color: var(--color-accent);
     padding-block: 23px;
     padding-inline: 20px;
+    & > svg {
+      fill: currentColor;
+    }
+    &:hover {
+      opacity: 0.8;
+    }
   }
 
   &__download-bottom {
@@ -175,9 +190,11 @@
       padding-left: 10px;
     }
     @include mobile-s {
-      min-width: 220px;
+      min-width: 200px;
     }
   }
   &__promo-button {
+    height: 53px;
+    width: 53px;
   }
 }
