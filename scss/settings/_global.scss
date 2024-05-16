@@ -23,12 +23,12 @@ h1,
 h2,
 h3,
 h4 {
-  font-weight: 500;
+  font-weight: 600;
   color: var(--color-dark-blue);
 }
 h1 {
   @include fluid-text(60, 30);
-  font-weight: 400;
+  font-weight: 500;
   line-height: 1.1;
 }
 h2 {

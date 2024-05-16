@@ -1,6 +1,11 @@
 .calculate-section {
-  position: relative;
-  margin-bottom: 200px;
+  margin-bottom: 70px;
+  @include tablet {
+    margin-bottom: 50px;
+  }
+  @include mobile {
+    margin-bottom: 30px;
+  }
   &__header {
     position: relative;
     background-image: url("../source/images/calc-bg.png");
@@ -26,13 +31,11 @@
   }
 
   &__banner {
+    position: relative;
+    margin-top: -200px;
     background-color: white;
-    width: 100%;
-    @include abs-center;
     box-shadow: 0px 4px 33px 0px rgba(0, 0, 0, 0.17);
     padding: 16px 13px 40px;
-    z-index: 100;
-    top: 100%;
   }
 
   &__banner-title {
