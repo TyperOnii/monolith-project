@@ -426,9 +426,11 @@ h4 {
   justify-content: space-between;
   display: flex;
   align-items: center;
+  border-bottom: 1px solid grey;
 }
 @media (max-width: 767px) {
   .header__inner {
+    border-bottom: none;
     flex-direction: column;
     gap: 10px;
   }
@@ -1260,6 +1262,170 @@ h4 {
   }
 }
 
+.account {
+  font-weight: 500;
+  font-size: clamp(18px, 1.3888888889vw, 20px);
+}
+.account__inner {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+  column-gap: 20px;
+  row-gap: 15px;
+}
+@media (max-width: 1023px) {
+  .account__inner {
+    grid-template-columns: 1fr;
+  }
+}
+.account__status {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 4px 21px 0px rgba(0, 0, 0, 0.25);
+  padding-top: 35px;
+  text-align: center;
+}
+.account__status-title {
+  margin-inline: auto;
+  max-width: 175px;
+  margin-bottom: 30px;
+}
+.account__status-type {
+  font-size: 35px;
+  padding-block: 35px;
+  padding-inline: 10px;
+  color: var(--color-grey);
+}
+.account__status-type--active {
+  color: var(--color-white);
+  background-color: var(--color-accent);
+}
+.account__download-project {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+.account__download {
+  box-shadow: 0px 4px 21px 0px rgba(0, 0, 0, 0.25);
+  padding: 30px;
+}
+@media (max-width: 767px) {
+  .account__download {
+    padding: 10px;
+  }
+}
+.account__download-wrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+}
+.account__download-title {
+  margin-bottom: 20px;
+}
+.account__download__actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 10px;
+}
+.account__download-input {
+  padding-left: 30px;
+  min-width: 280px;
+  width: 100%;
+  height: var(--input-height);
+}
+@media (max-width: 767px) {
+  .account__download-input {
+    padding-left: 10px;
+  }
+}
+@media (max-width: 480px) {
+  .account__download-input {
+    min-width: 220px;
+  }
+}
+.account__download-button {
+  border: none;
+  background-color: var(--color-accent);
+  padding-block: 23px;
+  padding-inline: 20px;
+}
+.account__download-bottom {
+  flex-grow: 1;
+  box-shadow: 0px 4px 21px 0px rgba(0, 0, 0, 0.25);
+}
+.account__progress-promo {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+.account__progress {
+  padding-inline: 30px;
+  padding-block: 35px;
+  flex-grow: 1;
+  box-shadow: 0px 4px 21px 0px rgba(0, 0, 0, 0.25);
+}
+@media (max-width: 767px) {
+  .account__progress {
+    padding: 10px;
+  }
+}
+.account__progress-top {
+  display: flex;
+  column-gap: 10px;
+  margin-bottom: 45px;
+}
+.account__progress-procent {
+  font-size: 50px;
+  font-weight: 700;
+}
+@media (max-width: 480px) {
+  .account__progress-procent {
+    font-size: 29px;
+  }
+}
+.account__progress-bottom {
+  display: flex;
+  justify-content: center;
+  color: var(--color-accent);
+}
+.account__progress-bottom > svg {
+  fill: currentColor;
+}
+.account__promo {
+  padding-block: 27px;
+  padding-inline: 30px;
+  box-shadow: 0px 4px 21px 0px rgba(0, 0, 0, 0.25);
+}
+@media (max-width: 767px) {
+  .account__promo {
+    padding: 10px;
+  }
+}
+.account__promo-title {
+  margin-bottom: 25px;
+}
+.account__promo-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.account__promo-input {
+  min-width: 280px;
+  width: 100%;
+  height: var(--input-height);
+  padding-left: 30px;
+}
+@media (max-width: 767px) {
+  .account__promo-input {
+    padding-left: 10px;
+  }
+}
+@media (max-width: 480px) {
+  .account__promo-input {
+    min-width: 220px;
+  }
+}
 .about {
   display: grid;
   row-gap: 40px;
