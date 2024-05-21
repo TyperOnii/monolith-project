@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="rus">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="basket.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="../css/main.css" />
+    <title>Страница проекта</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Шапка -->
+      <header class="header">
+        <div class="header__inner container-header">
+          <a href="../index.html" class="hidden-mobile">
+            <img
+              width="52"
+              height="57"
+              src="../source/icons/logo.svg"
+              alt="monolith"
+              class="header__logo"
+            />
+          </a>
+          <img
+            width="52"
+            height="57"
+            src="../source/icons/logo.svg"
+            alt="monolith"
+            class="header__logo visible-mobile"
+          />
+          <!-- Меню для шапки (на компьютере) -->
+          <nav class="header__menu menu hidden-mobile">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="./catalog.html" class="menu__link">Каталог проектов</a>
+              </li>
+              <li class="menu__item">
+                <a href="./about-company.html" class="menu__link">О компании</a>
+              </li>
+              <li class="menu__item">
+                <a href="./services.html" class="menu__link">Услуги</a>
+              </li>
+              <li class="menu__item">
+                <a href="./account.html" class="menu__link">Аккаунт</a>
+              </li>
+            </ul>
+          </nav>
+          <!-- Мобильное меню (на телефоне) -->
+          <nav class="header__menu mobile-bar visible-mobile translate-x">
+            <ul class="mobile-bar__list">
+              <li class="mobile-bar__item">
+                <a href="../index.html" class="mobile-bar__link">
+                  <span class="mobile-bar__link-wrapper">
+                    <img
+                      width="27"
+                      height="27"
+                      src="../source/icons/home.svg"
+                      alt="home"
+                    />
+                  </span>
+                  <span class="mobile-bar__link-text">Главная</span>
+                </a>
+              </li>
+              <li class="mobile-bar__item">
+                <a href="./about-company.html" class="mobile-bar__link">
+                  <span class="mobile-bar__link-wrapper">
+                    <img
+                      width="27"
+                      height="27"
+                      src="../source/icons/document.svg"
+                      alt="about company"
+                    />
+                  </span>
+                  <span class="mobile-bar__link-text">О компании</span>
+                </a>
+              </li>
+              <li class="mobile-bar__item">
+                <a href="./services.html" class="mobile-bar__link">
+                  <span class="mobile-bar__link-wrapper">
+                    <img
+                      width="27"
+                      height="27"
+                      src="../source/icons/actions.svg"
+                      alt="actions"
+                    />
+                  </span>
+                  <span class="mobile-bar__link-text">Услуги</span>
+                </a>
+              </li>
+              <li class="mobile-bar__item">
+                <a href="./catalog.html" class="mobile-bar__link">
+                  <span class="mobile-bar__link-wrapper">
+                    <img
+                      width="27"
+                      height="27"
+                      src="../source/icons/projects.svg"
+                      alt="projects"
+                    />
+                  </span>
+                  <span class="mobile-bar__link-text">Проекты</span>
+                </a>
+              </li>
+              <li class="mobile-bar__item">
+                <a href="./basket.html" class="mobile-bar__link">
+                  <span class="mobile-bar__link-wrapper">
+                    <img
+                      width="27"
+                      height="27"
+                      src="../source/icons/basket.svg"
+                      alt="basket"
+                    />
+                  </span>
+                  <span class="mobile-bar__link-text">Корзина</span>
+                </a>
+              </li>
+              <li class="mobile-bar__item">
+                <a href="./account.html" class="mobile-bar__link">
+                  <span class="mobile-bar__link-wrapper">
+                    <img
+                      width="27"
+                      height="27"
+                      src="../source/icons/account.svg"
+                      alt="account"
+                    />
+                  </span>
+                  <span class="mobile-bar__link-text">Аккаунт</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <!-- Кнопка для перехода в корзину (на компьютере) -->
+          <a href="./basket.html" class="header__button button hidden-mobile">
+            <svg
+              width="20.000000"
+              height="22.000000"
+              viewBox="0 0 20 22"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <defs />
+              <path
+                id="Icon"
+                d="M17.66 7.5L18.83 21.5L0.16 21.5L1.33 7.5L17.66 7.5ZM4.83 9.83L4.83 5.16C4.83 2.58 6.92 0.5 9.5 0.5C12.07 0.5 14.16 2.58 14.16 5.16L14.16 9.83"
+                stroke="#18181B"
+                stroke-opacity="1.000000"
+                stroke-width="1.000000"
+                stroke-linejoin="round"
+                stroke-linecap="round"
+              />
+            </svg>
+          </a>
+        </div>
+      </header>
+      <!-- Конец шапки -->
+
+      <main class="project-page">
+        <div class="project container">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  class="slider-image"
+                  src="../source/images/a-110.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="slider-image"
+                  src="../source/images/a-110.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="slider-image"
+                  src="../source/images/a-110.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+        <section class="specifications">
+          <div class="container">
+            <div class="specifications__content">
+              <div class="specifications__first-property">
+                <p class="specifications__item">
+                  <b>Фундамент:</b> плита, свайный
+                </p>
+                <p class="specifications__item">
+                  <b>Материал стен:</b> газобетон, пеноблок: 300мм + утеплитель
+                  по расчёту
+                </p>
+                <p class="specifications__item">
+                  <b>Перекрытие:</b> жб плиты, монолитная плита
+                </p>
+                <p class="specifications__item">
+                  <b>Тип кровли:</b> плоская кровля
+                </p>
+                <p class="specifications__item">
+                  <b>Кровельный материал:</b> мембрана
+                </p>
+                <p class="specifications__item">
+                  <b>Наружная отделка:</b> декоративная штукатурка + планкет +
+                  декоративный камень
+                </p>
+              </div>
+              <div class="specifications__second-property">
+                <div class="specifications__card">
+                  <img
+                    src="../source/icons/ladder-svg.svg"
+                    alt=""
+                    class="specifications__card-icon"
+                  />
+                  <p class="specifications__card-discr">
+                    <b>Этажность:</b>
+                    <span class="span-margin">3 этажа</span>
+                  </p>
+                </div>
+                <div class="specifications__card">
+                  <img
+                    src="../source/icons/sizes-svg.svg"
+                    alt=""
+                    class="specifications__card-icon"
+                  />
+                  <p class="specifications__card-discr">
+                    <b>Габариты:</b><span class="span-margin">18,5 х 12,2</span>
+                  </p>
+                </div>
+                <div class="specifications__card">
+                  <img
+                    src="../source/icons/diagonal-svg.svg"
+                    alt=""
+                    class="specifications__card-icon"
+                  />
+                  <p class="specifications__card-discr">
+                    <b>Площадь:</b> <span class="span-margin">660,54 м² </span>
+                  </p>
+                </div>
+              </div>
+              <div class="specifications__price">
+                <img
+                  src="../source/icons/money-svg2.svg"
+                  alt=""
+                  class="specifications__price-icon"
+                />
+                <p class="specifications__price-discr">
+                  <b>Стоимость строительства:</b> от 23 119 000 рублей
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="discription">
+          <div class="container">
+            <div class="discription__content">
+              <p class="discription__item">
+                В каждом проекте вы можете отрегулировать стоимость вашего дома,
+                уменьшив или увеличив его площадь. <br />
+                <b>Гараж </b>может быть закрытый, открытый на ваше усмотрение,
+                на одно или 3 места.
+              </p>
+              <p class="discription__item">
+                <b> Отделка дома</b> может быть выполнена из следующих
+                материалов:
+                <br />
+                Камень/дерево/декоративная
+                штукатурка/планкет/кирпич/декоративный камень
+              </p>
+              <p class="discription__item">
+                <b>Перекрытие из материалов:</b> жб плиты/деревянные
+                балки/монолитная плита
+              </p>
+              <p class="discription__item">
+                Так же вы можете выбрать подходящий именно вам
+                <b>тип кровли</b>, кровельный материал и фундамент.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="structure">
+          <div class="structure__content container">
+            <h1 class="structure__title title">Состав проекта</h1>
+            <ul class="structure__list">
+              <li class="structure__item" data-id="01">
+                <p class="structure__discr">Архитектурный проект</p>
+                <div class="structure__row">
+                  <div class="structure__price">16 000₽</div>
+                  <button data-add href="#" class="structure__button-bag">
+                    <img src="../source/icons/korzinka.svg" alt="korzinka" />
+                  </button>
+                  <button
+                    data-tooltip="open"
+                    type="button"
+                    id="modal-1"
+                    class="structure__button button button--accent"
+                  >
+                    Подробнее
+                  </button>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div id="basket" class="basket__products-block hidden"></div>
+        </section>
+        <!-- Начало: Секция "Форма" -->
+        <section class="form-section">
+          <div class="form-section__inner container">
+            <img
+              width="800"
+              height="800"
+              src="../source/images/form-image.jpeg"
+              alt=""
+              class="form-section__img"
+            />
+            <!-- Форма -->
+            <form action="" method="" class="form form__main-page">
+              <fieldset class="form__fieldset">
+                <legend class="form__legend">
+                  <h2 class="form__title">Остались вопросы?</h2>
+                </legend>
+                <p class="form__description">
+                  Оставьте ваш номер телефона и мы вам перезвоним!
+                </p>
+                <ul class="form__list">
+                  <li class="form__list-item">
+                    <label for="name" class="form__label"></label>
+                    <!-- Поле ИМЯ -->
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      class="form__input"
+                      placeholder="Имя"
+                      required
+                    />
+                  </li>
+                  <li class="form__list-item">
+                    <label for="phone-number" class="form__label"></label>
+                    <!-- Поле НОМЕР ТЕЛЕФОНА -->
+                    <input
+                      type="tel"
+                      id="phone-number"
+                      name="phone-number"
+                      class="form__input"
+                      placeholder="+ (   ) -- -- -- --"
+                      required
+                    />
+                  </li>
+                  <li class="form__list-item">
+                    <label for="city" class="form__label"></label>
+                    <!-- Поле ГОРОД -->
+                    <input
+                      type="text"
+                      id="city"
+                      name="city"
+                      class="form__input"
+                      placeholder="Город"
+                      required
+                    />
+                  </li>
+                </ul>
+                <!-- Кнопка отправить -->
+                <button
+                  type="submit"
+                  class="button button-submit button--accent form__button"
+                >
+                  Отправить
+                </button>
+                <p class="form__notification">
+                  Нажимая кнопку «отправить» вы соглашаетесь на обработку
+                  персональных данных
+                </p>
+              </fieldset>
+            </form>
+          </div>
+        </section>
+        <!-- Конец: Секция "Форма"  -->
+      </main>
+      <!-- Подвал сайта (футер) -->
+      <footer class="footer">
+        <div class="footer__inner">
+          <div class="footer__body">
+            <div class="footer__body-content container">
+              <div class="footer__logo-wrapper">
+                <img
+                  width="104"
+                  height="116"
+                  src="../source/icons/logo.svg"
+                  alt=""
+                  class="footer__logo"
+                />
+                <p class="footer__logo-description">
+                  Современное жилье созданное специально для Вас
+                </p>
+              </div>
+              <nav class="footer__nav">
+                <ul class="footer__list">
+                  <li class="footer__list-item">Разделы</li>
+                  <li class="footer__list-item">
+                    <a href="../index.html" class="footer__list-link"
+                      >Главная страница</a
+                    >
+                  </li>
+                  <li class="footer__list-item">
+                    <a href="#" class="footer__list-link">Каталог проектов</a>
+                  </li>
+                  <li class="footer__list-item">
+                    <a href="./about-company.html" class="footer__list-link"
+                      >О компании</a
+                    >
+                  </li>
+                  <li class="footer__list-item">
+                    <a href="./basket.html" class="footer__list-link"
+                      >Корзина</a
+                    >
+                  </li>
+                  <li class="footer__list-item">
+                    <a href="./services.html" class="footer__list-link"
+                      >Услуги</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+              <nav class="footer__nav">
+                <ul class="footer__list">
+                  <li class="footer__list-item">Как с нами связаться</li>
+                  <li class="footer__list-item">
+                    <a href="#" class="footer__list-link" title="Phone-number"
+                      >+7 (967) 770 66 88</a
+                    >
+                  </li>
+                  <li class="footer__list-item">
+                    <a href="#" class="footer__list-link" title="Gmail"
+                      >m550ae@gmail.com</a
+                    >
+                  </li>
+                  <li class="footer__list-item">
+                    <a href="#" class="footer__list-link" title="Vkontakte"
+                      >Вконтакте</a
+                    >
+                  </li>
+                  <li class="footer__list-item">
+                    <a href="#" class="footer__list-link" title="Instagram"
+                      >Instagram</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <div class="footer__bottom">
+            <div class="footer__bottom-content container">
+              <p class="footer__copyright">
+                Copyright © 2023 Все права защищены
+              </p>
+              <div class="footer__links">
+                <a href="#" class="footer__link">
+                  <img
+                    class="footer__link-icon"
+                    src="../source/icons/in-icon.svg"
+                    alt="in"
+                  />
+                </a>
+                <a href="#" class="footer__link">
+                  <img
+                    class="footer__link-icon"
+                    src="../source/icons/vk-icon.svg"
+                    alt="vk"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- </div> -->
+      <!-- <div id="modals-1" class="architectural-modal modal">
+      <div class="architectural-modal__content modal-box">
+        <button
+          data-action
+          id="button-1"
+          class="architectural-modal__button button-modal"
+        >
+          X
+        </button>
+        <h2 class="architectural-modal__title title-modal">
+          Архитектурный проект
+        </h2>
+        <p class="architectural-modal__discr discr-modal">
+          В архитектурный проект входит набор чертежей и эскизов, представляющих
+          собой архитектурно-строительную документацию (планы дома, фасадов,
+          этажей, общая информация об объекте), а также чертежи
+          инженерно-коммуникационных систем (водопровода, электроснабжения,
+          отопления, вентиляции, слаботочных сетей и так далее). Разработка этой
+          части проекта позволяет представить себе, как будет выглядеть объект
+          по завершении строительства, каковы будут его основные параметры и
+          характеристики. Выполненная таким образом первая часть пакета
+          документов отправляется на прохождение процедуры и представители
+          соответствующих государственных органов дают свою экспертную оценку
+          проекту, определяя, отвечает ли он существующим строительным нормам и
+          правилам.
+        </p>
+      </div>
+    </div>
+    <div id="modals-2" class="architectural-modal modal">
+      <div class="architectural-modal__content modal-box">
+        <button
+          data-action
+          id="button-2"
+          class="architectural-modal__button button-modal"
+        >
+          X
+        </button>
+        <h2 class="architectural-modal__title title-modal">Эскизный проект</h2>
+        <p class="architectural-modal__discr discr-modal">
+          Эскизный проект содержит описание общей концепции здания или дизайна
+          помещений, внешнего вида фасадов, элементов архитектуры. Документ
+          разрабатывается до начала оформления основного проекта. В содержание
+          эскизного проекта входят текстовые документы, чертежи, рисунки,
+          коллажи, другие графические материалы. На основании документа может
+          оформляться АГР и дизайн-проект. Согласование эскизного проекта
+          осуществляется только с заказчиком.
+        </p>
+      </div>
+    </div>
+    <div id="modals-3" class="architectural-modal modal">
+      <div class="architectural-modal__content modal-box">
+        <button
+          data-action
+          id="button-3"
+          class="architectural-modal__button button-modal"
+        >
+          X
+        </button>
+        <h2 class="architectural-modal__title title-modal">3D визуализация</h2>
+        <p class="architectural-modal__discr discr-modal">
+          Это объёмное фотореалистичное изображение, выполненное в специальных
+          графических редакторах. Оно отражает все нюансы будущего объекта:
+          объём, положение в пространстве с разных ракурсов, детали оформления
+          (цвета, материалы, текстуры).
+        </p>
+      </div>
+    </div>
+    <div id="modals-4" class="architectural-modal modal">
+      <div class="architectural-modal__content modal-box">
+        <button
+          data-action
+          id="button-4"
+          class="architectural-modal__button button-modal"
+        >
+          X
+        </button>
+        <h2 class="architectural-modal__title title-modal">3D модель</h2>
+        <p class="architectural-modal__discr discr-modal">
+          3D модель дает возможность увидеть, как будет выглядеть внешне ещё не
+          построенный дом, оценить фактуру материалов и цветовые решения.
+        </p>
+      </div>
+    </div>
+    <div id="modals-5" class="architectural-modal modal">
+      <div class="architectural-modal__content modal-box">
+        <button
+          data-action
+          id="button-5"
+          class="architectural-modal__button button-modal"
+        >
+          X
+        </button>
+        <h2 class="architectural-modal__title title-modal">
+          Фундамент монолитный
+        </h2>
+        <p class="architectural-modal__discr discr-modal">
+          План фундамента – важнейший этап строительства любого здания. Его
+          точность и информативность обуславливают качество дальнейших работ,
+          поэтому так важно знать общие правила составления плана.
+        </p>
+      </div>
+    </div>
+    <div id="modals-6" class="architectural-modal modal">
+      <div class="architectural-modal__content modal-box">
+        <button
+          data-action
+          id="button-5"
+          class="architectural-modal__button button-modal"
+        >
+          X
+        </button>
+        <h2 class="architectural-modal__title title-modal">
+          Конструктивный раздел
+        </h2>
+        <p class="architectural-modal__discr discr-modal">
+          Конструктивный раздел позволяет просчитать нагрузки на фундамент и
+          перекрытия, рассчитать объем работ и количество строительных
+          материалов. По сути, это подробная инструкция для подрядчика, на
+          основе которой строители возведут здание в точности с вашими
+          требованиями и ожиданиями. Проведенные ранее инженерные расчеты
+          являются основой для проектирования конструктивного проекта.
+        </p>
+      </div>
+    </div>
+    <div id="modals-7" class="architectural-modal modal">
+      <div class="architectural-modal__content modal-box">
+        <button
+          data-action
+          id="button-7"
+          class="architectural-modal__button button-modal"
+        >
+          X
+        </button>
+        <h2 class="architectural-modal__title title-modal">
+          Смета на строительство
+        </h2>
+        <p class="architectural-modal__discr discr-modal">
+          Смета защищает заказчика от внезапных, безосновательных изменений
+          стоимости ремонта. Оценивает затраты на материалы. Служит ориентиром
+          для закупок и помогает не потратить лишние деньги. Дает юридические
+          гарантии. На основе сметы суды в спорах между заказчиком и
+          исполнителем выносят решения. Дает инструмент контроля. По смете вы
+          сможете определить, что происходит на объекте. Легко сравнить то, что
+          на бумаге, с тем, что сделано по факту.
+        </p>
+      </div>
+    </div>
+    <div id="modals-8" class="architectural-modal modal">
+      <div class="architectural-modal__content modal-box">
+        <button
+          data-action
+          id="button-8"
+          class="architectural-modal__button button-modal"
+        >
+          X
+        </button>
+        <h2 class="architectural-modal__title title-modal">Полный проект</h2>
+        <p class="architectural-modal__discr discr-modal">
+          Полный состав проекта строительства дома содержит архитектурный,
+          строительный, инженерный разделы. Это комплект чертежей, схем,
+          пояснений, описаний конструкций дома, технологий его строительства,
+          применяемых материалов. Объем от 30 до 150 листов, зависит от
+          этажности, площади дома.
+        </p>
+        <p class="architectural-modal__discr discr-modal">
+          Такая документация полностью подготовлена для возведения домов с их
+          последующей регистрацией в госорганах. Она разрабатывается
+          профессиональными архитекторами, конструкторами, инженерами в
+          соответствии с действующими СНиПами, ГОСТами, правилами. Строить дом
+          по проекту – просто, быстро, безопасно и выгодно. Это сможет любой
+          частник – своими руками, либо строительная организация, фирма или
+          просто бригада. Далее рассмотрим состав и содержание проекта для
+          постройки дома.
+        </p>
+      </div> -->
+    </div>
+    <script src="../script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".mySwiper", {
+        cssMode: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        mousewheel: true,
+        keyboard: true,
+      });
+    </script>
+  </body>
+</html>
