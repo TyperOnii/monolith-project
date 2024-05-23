@@ -1642,7 +1642,9 @@ h4 {
   display: flex;
 }
 .structure__price {
-  justify-self: end;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   max-width: 390px;
   grid-area: E2;
   border: 1px solid #c5c5c5;
@@ -1650,6 +1652,7 @@ h4 {
   color: black;
   font-size: 25px;
   font-weight: 500;
+  min-width: 125px;
 }
 .structure__button {
   justify-self: end;
@@ -1706,7 +1709,7 @@ h4 {
     font-size: 18px;
   }
   .structure__price {
-    font-size: 18px;
+    font-size: 22px;
   }
   .structure__button-bag {
     padding: 15px 25px 15px;
@@ -1738,7 +1741,7 @@ h4 {
     border: none;
     padding: 10px;
     bottom: 10px;
-    left: 10px;
+    left: 0;
     position: absolute;
   }
 }
@@ -1752,7 +1755,7 @@ h4 {
   }
   .structure__price {
     max-width: 202px;
-    font-size: 16px;
+    font-size: 20px;
   }
   .structure__row {
     max-width: 100px;
