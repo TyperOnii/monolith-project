@@ -390,7 +390,9 @@ h4 {
 
 .container-header {
   margin-inline: auto;
-  max-width: calc(var(--container-header-width) + var(--container-padding-x) * 2);
+  max-width: calc(
+    var(--container-header-width) + var(--container-padding-x) * 2
+  );
   padding-inline: var(--container-padding-x);
 }
 @media (max-width: 767px) {
@@ -2287,4 +2289,4 @@ h4 {
   color: var(--color-accent);
   background-color: var(--color-white);
   box-shadow: var(--box-shadow-light);
-}/*# sourceMappingURL=main.css.map */
+} /*# sourceMappingURL=main.css.map */
