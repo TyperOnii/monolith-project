@@ -153,6 +153,50 @@
       </header>
       <!-- Конец шапки -->
 
+      <section class="filter container">
+        <button
+          class="filter__button-open button--accent"
+          data-action="filter-open"
+        >
+          Фильтр
+        </button>
+        <form id="filter-form" class="filter__form" action="" hidden>
+          <fieldset class="filter__fieldset">
+            <label class="filter__label" for="promotion">
+              <input
+                class="filter__input"
+                id="promotion"
+                name="promotion"
+                type="checkbox"
+              />Товары по акции</label
+            >
+            <legend class="filter__title">Сортировать:</legend>
+            <div class="filter__input-wrapper">
+              <label class="filter__label" for="default">
+                <input class="filter__input" type="radio" name="default" />По
+                умолчанию</label
+              >
+              <label class="filter__label" for="cheap-expensive">
+                <input
+                  class="filter__input"
+                  type="radio"
+                  name="cheap-expensive"
+                />От дешевых к дорогим</label
+              >
+
+              <label class="filter__label" for="expensive-cheap">
+                <input
+                  class="filter__input"
+                  type="radio"
+                  name="expensive-cheap"
+                />От дорогих кдешевым</label
+              >
+            </div>
+
+            <button class="filter__button button--accent">Применить</button>
+          </fieldset>
+        </form>
+      </section>
       <!-- Начало: Секция каталог товаров -->
       <section class="catalog">
         <div class="catalog__inner container">
@@ -513,6 +557,7 @@
         </div>
       </footer>
     </div>
+    <script src="../filter.js"></script>
     <script src="../script.js"></script>
   </body>
 </html>
