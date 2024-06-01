@@ -7,6 +7,7 @@
     <title>Авторизация</title>
   </head>
   <body>
+    <!-- ОБЕРТКА -->
     <div class="wrapper">
       <!-- Шапка -->
       <header class="header">
@@ -152,11 +153,16 @@
         </div>
       </header>
       <!-- Конец шапки -->
+
+      <!-- КОНТЕЙНЕР ДЛЯ ВСЕХ ШАГОВ (ИХ 2: ВХОД / РЕГИСТРАЦИЯ) -->
       <section class="authorization-section container">
+        <!-- НАЧАЛО - СЕКЦИИ ВХОД -->
         <article class="authorization" id="login">
           <div class="authorization__wrapper">
             <div class="authorization__wrapper-top">
+              <!-- Переключатели ВХОД / РЕГИСТРАЦИЯ -->
               <div class="authorization__buttons">
+                <!-- Кнопка РЕГИСТРАЦИЯ -->
                 <button
                   type="button"
                   class="authorization__buttons-button authorization__button-registration"
@@ -164,6 +170,7 @@
                 >
                   Регистрация
                 </button>
+                <!-- Кнопка ВХОД -->
                 <button
                   type="button"
                   class="authorization__buttons-button authorization__button-entrance authorization__button--active"
@@ -174,31 +181,43 @@
               </div>
             </div>
             <div class="authorization__wrapper-bottom">
+              <!-- ФОРМА ДЛЯ РЕГИСТРАЦИИ -->
               <form action="" class="authorization__form">
+                <!-- ПОЛЕ НОМЕР ТЕЛЕФОНА -->
                 <input
                   type="text"
                   class="authorization__input"
                   placeholder="Номер телефона или e-mail"
                   required
                 />
+                <!-- ПОЛЕ - ПАРОЛЬ -->
                 <input
                   type="password"
                   class="authorization__input"
                   placeholder="Пароль"
                   required
                 />
+                <!-- Кнопка ВОЙТИ -->
                 <button class="authorization__button">Войти</button>
+
+                <!-- Кнопка для ВОССТАНОВЛЕНИЯ ПАРОЛЯ -->
                 <a href="./recovery-account.html" class="authorization__link"
                   >Восстановить пароль</a
                 >
               </form>
+              <!-- Конец Формы -->
             </div>
           </div>
         </article>
+        <!-- КОНЕЦ - СЕКЦИИ ВХОД -->
+
+        <!-- НАЧАЛО СЕКЦИИ - ЗАРЕГИСТРОВАТЬСЯ -->
         <article class="authorization" hidden id="registr">
           <div class="authorization__wrapper">
             <div class="authorization__wrapper-top">
+              <!-- Переключатели ВХОД / РЕГИСТРАЦИЯ -->
               <div class="authorization__buttons">
+                <!-- Кнопка РЕГИСТРАЦИЯ -->
                 <button
                   type="button"
                   class="authorization__buttons-button authorization__button-registration authorization__button--active"
@@ -206,6 +225,7 @@
                 >
                   Регистрация
                 </button>
+                <!-- Кнопка ВХОД -->
                 <button
                   type="button"
                   class="authorization__buttons-button authorization__button-entrance"
@@ -216,43 +236,53 @@
               </div>
             </div>
             <div class="authorization__wrapper-bottom">
+              <!-- ФОРМА ДЛЯ РЕГИСТРАЦИИ -->
               <form action="" class="authorization__form">
+                <!-- ПОЛЕ - ИМЯ -->
                 <input
                   type="text"
                   class="authorization__input"
                   placeholder="Имя"
                   required
                 />
+                <!-- ПОЛЕ - ПОЧТА-->
                 <input
                   type="text"
                   class="authorization__input"
                   placeholder="E-mail"
                   required
                 />
+                <!-- ПОЛЕ - НОМЕР ТЕЛЕФОНА -->
                 <input
                   type="tel"
                   class="authorization__input"
                   placeholder="+ (   ) -- -- -- --"
                   required
                 />
+                <!-- ПОЛЕ - ПАРОЛЬ-->
                 <input
                   type="password"
                   class="authorization__input"
                   placeholder="Пароль"
                   required
                 />
+                <!-- Кнопка ЗАРЕГИСТРОВАТЬСЯ -->
                 <button class="authorization__button">
                   Зарегестрироваться
                 </button>
+                <!-- Кнопка ВОССТАНОВИТЬ ПАРОЛЬ -->
                 <a href="./recovery-account.html" class="authorization__link"
                   >Восстановить пароль</a
                 >
               </form>
+              <!-- КОНЕЦ ФОРМЫ ДЛЯ РЕГИСТРАЦИИ -->
             </div>
           </div>
         </article>
+        <!-- КОНЕЦ СЕКЦИИ - ЗАРЕГИСТРОВАТЬСЯ -->
       </section>
     </div>
+    <!-- СКРИПТЫ -->
     <script src="../authorization.js"></script>
   </body>
 </html>

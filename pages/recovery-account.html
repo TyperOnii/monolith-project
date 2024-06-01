@@ -7,26 +7,36 @@
     <title>Восставновление пароля</title>
   </head>
   <body>
+    <!-- ОБЕРТКА -->
     <div class="wrapper">
+      <!-- КОНТЕЙНЕР ДЛЯ ВСЕХ ШАГОВ (ИХ 5: СПОСОБ, ПОЧТА / ТЕЛЕФОН, КОД, НОВЫЙ ПАРОЛЬ) -->
       <section class="recovery-section container">
+        <!-- Каждый блок с классом "recovery" - новая секция(шаг) -->
+
+        <!-- НАЧАЛО СЕКЦИИ - СПОСОБ ВОССТАНОВЛЕНИЯ -->
         <article class="recovery">
           <div class="recovery__wrapper">
             <div class="recovery__wrapper-top">
+              <!-- Заголовок секции  -->
               <h4>Выберите способ восстановления пароля</h4>
             </div>
             <div class="recovery__wrapper-bottom">
+              <!-- ФОРМА -->
               <form action="" class="recovery__form">
                 <div class="recovery__inputs">
                   <div class="recovery__form-button">
+                    <!-- ИНПУТ - ЧЕРЕЗ ПОЧТУ -->
                     <input id="email" type="radio" name="radio" value="1" />
                     <label for="email">E-mail</label>
                   </div>
 
                   <div class="recovery__form-button">
+                    <!-- ИНПУТ - ЧЕРЕЗ ТЕЛЕФОН -->
                     <input id="phone" type="radio" name="radio" value="2" />
                     <label for="phone">Номер телефона</label>
                   </div>
                 </div>
+                <!-- КНОПКА - ДАЛЕЕ -->
                 <button
                   class="recovery__button"
                   type="button"
@@ -35,103 +45,138 @@
                   Далее
                 </button>
               </form>
+              <!-- КОНЕЦ ФОРМЫ -->
             </div>
           </div>
         </article>
+        <!-- КОНЕЦ СЕКЦИИ - СПОСОБ ВОССТАНОВЛЕНИЯ -->
+
+        <!-- НАЧАЛО СЕКЦИИ- ЧЕРЕЗ ПОЧТУ -->
         <article class="recovery" id="recovery-email" hidden>
           <div class="recovery__wrapper">
             <div class="recovery__wrapper-top">
+              <!-- Заголовок секции  -->
               <h4>Введите адрес электронной почты для восстановления пароля</h4>
             </div>
             <div class="recovery__wrapper-bottom">
+              <!-- ПОЛЕ - ВВЕДИТЕ ПОЧТУ -->
               <input
                 type="text"
                 class="authorization__input recovery__input"
                 placeholder="E-mail"
                 required
               />
-              <button class="recovery__button">Войти</button>
+              <!-- КНОПКА - ДАЛЕЕ -->
+              <button class="recovery__button">Далее</button>
             </div>
           </div>
         </article>
+        <!-- КОНЕЦ СЕКЦИИ - ЧЕРЕЗ ПОЧТУ -->
+
+        <!-- НАЧАЛО СЕКЦИИ- ЧЕРЕЗ ТЕЛЕФОН -->
         <article class="recovery" id="recovery-phone" hidden>
           <div class="recovery__wrapper">
             <div class="recovery__wrapper-top">
+              <!-- Заголовок секции  -->
               <h4>Введите номер телефона для восстановления пароля</h4>
             </div>
             <div class="recovery__wrapper-bottom">
+              <!-- ПОЛЕ - НОМЕР ТЕЛЕФОНА -->
               <input
                 type="tel"
                 class="authorization__input recovery__input"
                 placeholder="+_(___)___-__-__"
                 required
               />
-              <button class="recovery__button">Войти</button>
+              <!-- КНОПКА - ДАЛЕЕ -->
+              <button class="recovery__button">Далее</button>
             </div>
           </div>
         </article>
+        <!-- КОНЕЦ СЕКЦИИ - ЧЕРЕЗ ТЕЛЕФОН -->
+
+        <!-- НАЧАЛО СЕКЦИИ - КОД ПОДТВЕРЖДЕНИЯ -->
         <arcticle class="recovery" id="code" hidden>
           <div class="recovery__wrapper">
             <div class="recovery__wrapper-top">
+              <!-- Заголовок секции  -->
               <h4>Введите код из сообщения:</h4>
             </div>
             <div class="recovery__wrapper-bottom">
+              <!-- ФОРМА -->
               <form class="recovery__form">
                 <div class="pin-code">
+                  <!-- 1-Й СИМВОЛ -->
                   <input
                     class="recovery__input-number"
                     type="number"
                     maxlength="1"
                     autofocus
                   />
+                  <!-- 2-Й СИМВОЛ -->
                   <input
                     class="recovery__input-number"
                     type="number"
                     maxlength="1"
                   />
+                  <!-- 3-Й СИМВОЛ -->
                   <input
                     class="recovery__input-number"
                     type="number"
                     maxlength="1"
                   />
+                  <!-- 4-Й СИМВОЛ -->
                   <input
                     class="recovery__input-number"
                     type="number"
                     maxlength="1"
                   />
                 </div>
-
+                <!-- КНОПКА - ОТПРАВИТЬ ЕЩЕ РАЗ -->
                 <button type="button" class="recovery__button-repeat">
                   Отправить еще раз
                 </button>
               </form>
+              <!-- КОНЕЦ ФОРМЫ -->
             </div>
           </div>
         </arcticle>
+        <!-- КОНЕЦ СЕКЦИИ - КОД ПОДТВЕРЖДЕНИЯ -->
+
+        <!-- НАЧАЛО СЕКЦИИ - НОВЫЙ ПАРОЛЬ -->
         <article class="recovery" id="recovery-password" hidden>
           <div class="recovery__wrapper">
             <div class="recovery__wrapper-top">
+              <!-- Заголовок секции -->
               <h4>Введите новый пароль:</h4>
             </div>
-            <div class="recovery__wrapper-bottom">
+            <!-- ФОРМА -->
+            <form class="recovery__wrapper-bottom">
+              <!-- ПОЛЕ - ПАРОЛЬ  -->
               <input
                 type="password"
                 class="authorization__input recovery__input"
                 placeholder="Пароль"
                 required
               />
+              <!-- ПОЛЕ - НОВЫЙ ПАРОЛЬ  -->
               <input
                 type="password"
                 class="authorization__input recovery__input"
                 placeholder="Введите повторно"
                 required
               />
+              <!-- КНОПКА - СОХРАНИТЬ ПАРОЛЬ -->
               <button class="recovery__button">Сохранить</button>
-            </div>
+            </form>
+            <!-- КОНЕЦ ФОРМЫ -->
           </div>
         </article>
+        <!-- КОНЕЦ СЕКЦИИ - НОВЫЙ ПАРОЛЬ -->
       </section>
+      <!-- КОНЕЦ КОНТЕЙНЕРА -->
     </div>
+    <!-- СКРИПТЫ -->
     <script src="../recovery.js"></script>
   </body>
 </html>
