@@ -1,5 +1,4 @@
 var pinContainer = document.querySelector(".pin-code");
-console.log("There is " + pinContainer.length + " Pin Container on the page.");
 
 pinContainer.addEventListener(
   "keyup",
