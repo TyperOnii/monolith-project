@@ -1,0 +1,91 @@
+.authorization-section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  margin-top: 150px;
+}
+.authorization {
+  box-shadow: 0px 4px 21px 0px rgba(0, 0, 0, 0.25);
+  width: 640px;
+  @include mobile {
+    width: 420px;
+  }
+  @include mobile-s {
+    width: 340px;
+  }
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  &__wrapper-top {
+  }
+
+  &__wrapper-bottom {
+    padding-inline: 100px;
+    padding-block: 70px;
+    @include mobile {
+      padding-inline: 30px;
+      padding-block: 30px;
+    }
+    @include mobile-s {
+      padding: 15px;
+    }
+  }
+
+  &__buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  &__buttons-button {
+    color: var(--color-accent);
+    background-color: var(--color-white);
+    border: none;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  &__button {
+    margin-top: 10px;
+    padding-block: 15px;
+    background-color: var(--color-accent);
+    color: var(--color-white);
+    border: none;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  &__button-registration {
+    padding-block: 20px;
+  }
+
+  &__button-entrance {
+  }
+
+  &__button--active {
+    color: var(--color-white);
+    background-color: var(--color-accent);
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__input {
+    width: 100%;
+    padding-left: 20px;
+    height: var(--input-height);
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__link {
+    text-decoration: underline;
+    color: var(--color-grey);
+    margin-top: 25px;
+  }
+}
