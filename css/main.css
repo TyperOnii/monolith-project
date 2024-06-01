@@ -1289,7 +1289,6 @@ h4 {
   text-align: center;
 }
 .account__progress-image {
-  border-radius: 80%;
   background-color: transparent;
 }
 .account__status-title {
@@ -1908,6 +1907,14 @@ h4 {
 }
 .authorization__button-registration {
   padding-block: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.authorization__button-entrance {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .authorization__button--active {
   color: var(--color-white);
