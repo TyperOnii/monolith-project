@@ -20,6 +20,10 @@
     padding-top: 35px;
     text-align: center;
   }
+  &__progress-image {
+    border-radius: 80%;
+    background-color: transparent;
+  }
 
   &__status-title {
     margin-inline: auto;
@@ -150,12 +154,10 @@
   }
 
   &__progress-bottom {
+    background-color: transparent;
+    border-radius: 60%;
     display: flex;
     justify-content: center;
-    color: var(--color-accent);
-    & > svg {
-      fill: currentColor;
-    }
   }
 
   &__promo {
