@@ -180,8 +180,14 @@
                       type="text"
                       class="account__download-input"
                       placeholder="Ссылка на скачивание.com"
+                      id="inputCopy1"
                     />
-                    <button class="account__download-button button-accent">
+                    <!-- Кнопка ИЗМЕНЕН -->
+                    <button
+                      type="button"
+                      class="account__download-button button-accent"
+                      id="buttonCopy1"
+                    >
                       <svg
                         width="17.000000"
                         height="17.000000"
@@ -224,7 +230,11 @@
                         />
                       </svg>
                     </button>
-                    <button class="account__download-button button-accent">
+                    <!-- Кнопка ИЗМЕНЕН -->
+                    <button
+                      type="button"
+                      class="account__download-button button-accent account__button-reply"
+                    >
                       <svg
                         width="27.000000"
                         height="13.000000"
@@ -244,6 +254,29 @@
                       </svg>
                     </button>
                   </div>
+                  <!-- Начало социальных сетей -->
+                  <div class="account__reply-row">
+                    <a href="https://vk.com/feed" class="account__reply">
+                      <img
+                        width="30"
+                        height="30"
+                        src="../source/icons/vk-icon.svg"
+                        alt=""
+                      />
+                    </a>
+                    <a
+                      href="https://web.telegram.org/a/"
+                      class="account__reply"
+                    >
+                      <img
+                        width="30"
+                        height="30"
+                        src="../source/icons/tg-svg.svg"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <!-- Конец социальных сетей -->
                 </div>
               </div>
               <div class="account__download-bottom">1</div>
@@ -274,13 +307,20 @@
                     Поделитесь промокодом с другом и получи вознаграждение 5% от
                     его покупки
                   </p>
-                  <div class="account__promo-actions">
+                  <!-- ЗДЕСЬ ПОМЕНЯЛ ДЛЯ DIV КЛАСС НА account__download__actions -->
+                  <div class="account__download__actions">
                     <input
                       type="text"
                       class="account__promo-input"
                       placeholder="SM3AF5"
+                      id="inputCopy2"
                     />
-                    <button class="account__download-button button-accent">
+                    <!-- Кнопка ИЗМЕНЕН -->
+                    <button
+                      type="button"
+                      class="account__download-button button-accent"
+                      id="buttonCopy2"
+                    >
                       <svg
                         width="17.000000"
                         height="17.000000"
@@ -324,7 +364,11 @@
                         />
                       </svg>
                     </button>
-                    <button class="account__download-button button-accent">
+                    <!-- Кнопка ИЗМЕНЕН -->
+                    <button
+                      type="button"
+                      class="account__download-button button-accent account__button-reply"
+                    >
                       <svg
                         width="19.000000"
                         height="19.000000"
@@ -378,6 +422,29 @@
                       </svg>
                     </button>
                   </div>
+                  <!-- Начало социальных сетей -->
+                  <div class="account__reply-row">
+                    <a href="https://vk.com/feed" class="account__reply">
+                      <img
+                        width="30"
+                        height="30"
+                        src="../source/icons/vk-icon.svg"
+                        alt=""
+                      />
+                    </a>
+                    <a
+                      href="https://web.telegram.org/a/"
+                      class="account__reply"
+                    >
+                      <img
+                        width="30"
+                        height="30"
+                        src="../source/icons/tg-svg.svg"
+                        alt=""
+                      />
+                    </a>
+                  </div>
+                  <!-- Конец социальных сетей -->
                 </div>
               </div>
             </div>
@@ -385,6 +452,8 @@
         </section>
       </main>
     </div>
+    <!-- Скрипты для кнопок  -->
+    <script src="../copy.js"></script>
     <script src="../script.js"></script>
   </body>
 </html>
