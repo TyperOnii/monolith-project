@@ -9,7 +9,7 @@
   <body>
     <div class="wrapper">
       <!-- Шапка -->
-      <header class="header">
+      <header class="header" hidden>
         <div class="header__inner container-header">
           <a href="../index.html" class="hidden-mobile">
             <img
@@ -152,6 +152,137 @@
         </div>
       </header>
       <!-- Конец шапки -->
+
+      <section class="quiz-section container">
+        <div class="quiz">
+          <div class="quiz__wrapper">
+            <div class="quiz__content">
+              <div class="quiz__content-wrapper">
+                <div class="quiz__number-wrapper">
+                  <!-- Номер квиза -->
+                  <p class="quiz__question-number" id="quiz-number">01</p>
+                </div>
+                <!-- Форма -->
+                <form action="" class="quiz__form-quistions form-quistions">
+                  <!-- 1-ая Секция с вопросами -->
+                  <fieldset class="form-quistions__content">
+                    <legend
+                      class="form-quistions__title-wrapper"
+                      id="title-first"
+                    >
+                      <!-- Вопрос 1-ый -->
+                      <h3 class="form-quistions__title">Загружаем вопрос...</h3>
+                    </legend>
+                    <div
+                      class="form-quistions__answers-row"
+                      id="quiz-content-first"
+                    >
+                      <label for="input" class="form-quistions__label">
+                        <input
+                          type="number"
+                          id="input"
+                          class="form-quistions__input"
+                          placeholder=".....м²"
+                          required
+                        />
+                      </label>
+                    </div>
+                  </fieldset>
+                  <!-- 2-ая Секция с вопросами -->
+                  <fieldset class="form-quistions__content">
+                    <legend
+                      class="form-quistions__title-wrapper"
+                      id="title-second"
+                    >
+                      <!-- Вопрос 2-й -->
+                      <!-- <h3 class="form-quistions__title">Загружаем вопрос...</h3> -->
+                    </legend>
+                    <div
+                      class="form-quistions__answers-row"
+                      id="quiz-content-second"
+                    >
+                      <!-- <label for="floor-one" class="form-quistions__label">
+                        <input
+                          type="checkbox"
+                          id="floor-one"
+                          class="form-quistions__checkbox form-quistions__checkbox--base"
+                        />
+                        value
+                      </label> -->
+                      <!-- <div class="form-quistions__checkbox-wrapper">
+                        <label for="floor-one" class="form-quistions__label">
+                          <input
+                            type="checkbox"
+                            id="floor-one"
+                            class="form-quistions__checkbox"
+                          />
+                          <span class="form-quistions__custom-checkbox">1</span>
+                        </label>
+                      </div>
+                      <div class="form-quistions__checkbox-wrapper">
+                        <label for="floor-two" class="form-quistions__label">
+                          <input
+                            type="checkbox"
+                            id="floor-two"
+                            class="form-quistions__checkbox"
+                          />
+                          <span class="form-quistions__custom-checkbox">2</span>
+                        </label>
+                      </div>
+                      <div class="form-quistions__checkbox-wrapper">
+                        <label for="floor-three" class="form-quistions__label">
+                          <input
+                            type="checkbox"
+                            id="floor-three"
+                            class="form-quistions__checkbox"
+                          />
+                          <span class="form-quistions__custom-checkbox">3</span>
+                        </label>
+                      </div>
+                      <div class="form-quistions__checkbox-wrapper">
+                        <label for="floor-four" class="form-quistions__label">
+                          <input
+                            type="checkbox"
+                            id="floor-four"
+                            class="form-quistions__checkbox"
+                          />
+                          <span class="form-quistions__custom-checkbox"
+                            >4+</span
+                          >
+                        </label> -->
+                      <!-- </div> -->
+                    </div>
+                  </fieldset>
+                  <!-- Кнопки -->
+                  <div class="form-quistions__actions">
+                    <button
+                      class="form-quistions__button button button-back"
+                      type="button"
+                    >
+                      Назад
+                    </button>
+                    <button
+                      type="submit"
+                      class="form-quistions__button button--accent button button-continue"
+                    >
+                      Далее
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <!-- изображение -->
+            <img
+              width="600"
+              height="500"
+              src="../source/images/quiz-img-1.jpeg"
+              alt=""
+              class="quiz__image hidden-mobile"
+            />
+          </div>
+        </div>
+      </section>
     </div>
+    <script src="../quiz.js"></script>
   </body>
 </html>
