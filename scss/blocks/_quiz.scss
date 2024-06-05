@@ -1,5 +1,8 @@
 .quiz-section {
   position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .quiz {
@@ -20,6 +23,7 @@
   }
 
   &__question-number {
+    margin-bottom: 20px;
     color: rgb(11, 30, 72);
     font-weight: 700;
     @include fluid-text(130, 30);
@@ -32,6 +36,10 @@
   }
 
   &__image {
+    @include tablet {
+      width: 50%;
+      height: auto;
+    }
   }
 }
 .form-quistions {
@@ -50,12 +58,18 @@
   }
 
   &__input {
+    height: var(--input-height);
     padding-left: 20px;
   }
 
   &__answers-row {
     display: flex;
     gap: 30px;
+    &--checkbox {
+      flex-wrap: wrap;
+      row-gap: 30px;
+      column-gap: 10px;
+    }
   }
 
   &__checkbox {
@@ -107,4 +121,18 @@
   background-color: var(--color-white);
   border: 1px solid black;
   color: black;
+}
+
+.checkbox-base {
+  white-space: nowrap;
+  @include fluid-text(20, 16);
+  width: 45%;
+  gap: 10px;
+  display: flex;
+  @include desktop {
+    width: 50%;
+  }
+  @include tablet {
+    width: 100%;
+  }
 }

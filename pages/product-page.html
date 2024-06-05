@@ -292,7 +292,10 @@
           <div class="structure__content container">
             <h1 class="structure__title title">Состав проекта</h1>
             <ul class="structure__list">
-              <li class="structure__item" data-id="01">
+              <li
+                class="structure__item"
+                data-discr="В архитектурный проект входит набор чертежей и эскизов, представляющих собой архитектурно-строительную документацию (планы дома, фасадов, этажей, общая информация об объекте), а также чертежи инженерно-коммуникационных систем (водопровода, электроснабжения, отопления, вентиляции, слаботочных сетей и так далее). Разработка этой части проекта позволяет представить себе, как будет выглядеть объект по завершении строительства, каковы будут его основные параметры и характеристики. Выполненная таким образом первая часть пакета документов отправляется на прохождение процедуры и представители соответствующих государственных органов дают свою экспертную оценку проекту, определяя, отвечает ли он существующим строительным нормам и правилам."
+              >
                 <p class="structure__discr">Архитектурный проект</p>
                 <div class="structure__row">
                   <div class="structure__price">16 000₽</div>
@@ -309,8 +312,11 @@
                   </button>
                 </div>
               </li>
-              <li class="structure__item" data-id="01">
-                <p class="structure__discr">Архитектурный проект</p>
+              <li
+                class="structure__item"
+                data-discr="Эскизный проект содержит описание общей концепции здания или дизайна помещений, внешнего вида фасадов, элементов архитектуры. Документ разрабатывается до начала оформления основного проекта. В содержание эскизного проекта входят текстовые документы, чертежи, рисунки, коллажи, другие графические материалы. На основании документа может оформляться АГР и дизайн-проект. Согласование эскизного проекта осуществляется только с заказчиком. "
+              >
+                <p class="structure__discr">Эскизный проект</p>
                 <div class="structure__row">
                   <div class="structure__price">9 000₽</div>
                   <button data-add href="#" class="structure__button-bag">
@@ -501,184 +507,11 @@
           </div>
         </div>
       </footer>
-      <!-- </div> -->
-      <!-- <div id="modals-1" class="architectural-modal modal">
-      <div class="architectural-modal__content modal-box">
-        <button
-          data-action
-          id="button-1"
-          class="architectural-modal__button button-modal"
-        >
-          X
-        </button>
-        <h2 class="architectural-modal__title title-modal">
-          Архитектурный проект
-        </h2>
-        <p class="architectural-modal__discr discr-modal">
-          В архитектурный проект входит набор чертежей и эскизов, представляющих
-          собой архитектурно-строительную документацию (планы дома, фасадов,
-          этажей, общая информация об объекте), а также чертежи
-          инженерно-коммуникационных систем (водопровода, электроснабжения,
-          отопления, вентиляции, слаботочных сетей и так далее). Разработка этой
-          части проекта позволяет представить себе, как будет выглядеть объект
-          по завершении строительства, каковы будут его основные параметры и
-          характеристики. Выполненная таким образом первая часть пакета
-          документов отправляется на прохождение процедуры и представители
-          соответствующих государственных органов дают свою экспертную оценку
-          проекту, определяя, отвечает ли он существующим строительным нормам и
-          правилам.
-        </p>
-      </div>
+      <div class="overlay" id="overlay" hidden></div>
     </div>
-    <div id="modals-2" class="architectural-modal modal">
-      <div class="architectural-modal__content modal-box">
-        <button
-          data-action
-          id="button-2"
-          class="architectural-modal__button button-modal"
-        >
-          X
-        </button>
-        <h2 class="architectural-modal__title title-modal">Эскизный проект</h2>
-        <p class="architectural-modal__discr discr-modal">
-          Эскизный проект содержит описание общей концепции здания или дизайна
-          помещений, внешнего вида фасадов, элементов архитектуры. Документ
-          разрабатывается до начала оформления основного проекта. В содержание
-          эскизного проекта входят текстовые документы, чертежи, рисунки,
-          коллажи, другие графические материалы. На основании документа может
-          оформляться АГР и дизайн-проект. Согласование эскизного проекта
-          осуществляется только с заказчиком.
-        </p>
-      </div>
-    </div>
-    <div id="modals-3" class="architectural-modal modal">
-      <div class="architectural-modal__content modal-box">
-        <button
-          data-action
-          id="button-3"
-          class="architectural-modal__button button-modal"
-        >
-          X
-        </button>
-        <h2 class="architectural-modal__title title-modal">3D визуализация</h2>
-        <p class="architectural-modal__discr discr-modal">
-          Это объёмное фотореалистичное изображение, выполненное в специальных
-          графических редакторах. Оно отражает все нюансы будущего объекта:
-          объём, положение в пространстве с разных ракурсов, детали оформления
-          (цвета, материалы, текстуры).
-        </p>
-      </div>
-    </div>
-    <div id="modals-4" class="architectural-modal modal">
-      <div class="architectural-modal__content modal-box">
-        <button
-          data-action
-          id="button-4"
-          class="architectural-modal__button button-modal"
-        >
-          X
-        </button>
-        <h2 class="architectural-modal__title title-modal">3D модель</h2>
-        <p class="architectural-modal__discr discr-modal">
-          3D модель дает возможность увидеть, как будет выглядеть внешне ещё не
-          построенный дом, оценить фактуру материалов и цветовые решения.
-        </p>
-      </div>
-    </div>
-    <div id="modals-5" class="architectural-modal modal">
-      <div class="architectural-modal__content modal-box">
-        <button
-          data-action
-          id="button-5"
-          class="architectural-modal__button button-modal"
-        >
-          X
-        </button>
-        <h2 class="architectural-modal__title title-modal">
-          Фундамент монолитный
-        </h2>
-        <p class="architectural-modal__discr discr-modal">
-          План фундамента – важнейший этап строительства любого здания. Его
-          точность и информативность обуславливают качество дальнейших работ,
-          поэтому так важно знать общие правила составления плана.
-        </p>
-      </div>
-    </div>
-    <div id="modals-6" class="architectural-modal modal">
-      <div class="architectural-modal__content modal-box">
-        <button
-          data-action
-          id="button-5"
-          class="architectural-modal__button button-modal"
-        >
-          X
-        </button>
-        <h2 class="architectural-modal__title title-modal">
-          Конструктивный раздел
-        </h2>
-        <p class="architectural-modal__discr discr-modal">
-          Конструктивный раздел позволяет просчитать нагрузки на фундамент и
-          перекрытия, рассчитать объем работ и количество строительных
-          материалов. По сути, это подробная инструкция для подрядчика, на
-          основе которой строители возведут здание в точности с вашими
-          требованиями и ожиданиями. Проведенные ранее инженерные расчеты
-          являются основой для проектирования конструктивного проекта.
-        </p>
-      </div>
-    </div>
-    <div id="modals-7" class="architectural-modal modal">
-      <div class="architectural-modal__content modal-box">
-        <button
-          data-action
-          id="button-7"
-          class="architectural-modal__button button-modal"
-        >
-          X
-        </button>
-        <h2 class="architectural-modal__title title-modal">
-          Смета на строительство
-        </h2>
-        <p class="architectural-modal__discr discr-modal">
-          Смета защищает заказчика от внезапных, безосновательных изменений
-          стоимости ремонта. Оценивает затраты на материалы. Служит ориентиром
-          для закупок и помогает не потратить лишние деньги. Дает юридические
-          гарантии. На основе сметы суды в спорах между заказчиком и
-          исполнителем выносят решения. Дает инструмент контроля. По смете вы
-          сможете определить, что происходит на объекте. Легко сравнить то, что
-          на бумаге, с тем, что сделано по факту.
-        </p>
-      </div>
-    </div>
-    <div id="modals-8" class="architectural-modal modal">
-      <div class="architectural-modal__content modal-box">
-        <button
-          data-action
-          id="button-8"
-          class="architectural-modal__button button-modal"
-        >
-          X
-        </button>
-        <h2 class="architectural-modal__title title-modal">Полный проект</h2>
-        <p class="architectural-modal__discr discr-modal">
-          Полный состав проекта строительства дома содержит архитектурный,
-          строительный, инженерный разделы. Это комплект чертежей, схем,
-          пояснений, описаний конструкций дома, технологий его строительства,
-          применяемых материалов. Объем от 30 до 150 листов, зависит от
-          этажности, площади дома.
-        </p>
-        <p class="architectural-modal__discr discr-modal">
-          Такая документация полностью подготовлена для возведения домов с их
-          последующей регистрацией в госорганах. Она разрабатывается
-          профессиональными архитекторами, конструкторами, инженерами в
-          соответствии с действующими СНиПами, ГОСТами, правилами. Строить дом
-          по проекту – просто, быстро, безопасно и выгодно. Это сможет любой
-          частник – своими руками, либо строительная организация, фирма или
-          просто бригада. Далее рассмотрим состав и содержание проекта для
-          постройки дома.
-        </p>
-      </div> -->
-    </div>
+
     <script src="../script.js"></script>
+    <script src="../modal.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script>
       const swiper = new Swiper(".mySwiper", {
