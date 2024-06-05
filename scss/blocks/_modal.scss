@@ -5,14 +5,20 @@
   transform: translate(-50%, -50%);
   z-index: 1000;
   max-width: 735px;
+  min-width: 375px;
   padding-top: 35px;
   padding-bottom: 60px;
   box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.14);
   background-color: white;
   color: var(--color-black);
-  @include mobile {
+
+  @include tablet {
     padding-top: 20px;
     padding-bottom: 30px;
+  }
+  @include mobile-s {
+    padding-top: 10px;
+    padding-bottom: 15px;
   }
   &__wrapper {
   }
@@ -27,15 +33,18 @@
     background-color: transparent;
     border: none;
     margin-right: 35px;
-    @include mobile {
+    @include tablet {
       margin-right: 20px;
     }
   }
 
   &__content {
     padding-inline: 65px;
-    @include mobile {
+    @include tablet {
       padding-inline: 30px;
+    }
+    @include mobile-s {
+      padding-inline: 15px;
     }
   }
 
@@ -46,6 +55,7 @@
   }
 
   &__discr {
+    overflow: scroll;
     @include fluid-text(20, 16);
     max-width: 600px;
     font-weight: 400;
