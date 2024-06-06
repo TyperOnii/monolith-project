@@ -5,6 +5,7 @@
   justify-content: center;
   height: 80px;
   color: var(--color-white);
+  background-color: white;
   border: none;
   transition-duration: var(--transition-duration);
   @include tablet {

@@ -80,10 +80,15 @@
     position: absolute;
   }
   &__button {
-    &:first-child {
-      color: white;
-    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
     height: 76px;
+    @include hover {
+      color: var(--color-white);
+      background-color: var(--color-accent);
+    }
   }
 }
 .calculate {
