@@ -16,6 +16,7 @@
   padding-inline: 30px;
 }
 .button--accent {
+  color: var(--color-white);
   background-color: var(--color-accent);
 }
 .button-order {
@@ -88,4 +89,9 @@
     background-color: var(--color-white);
     box-shadow: var(--box-shadow-light);
   }
+}
+
+.button--base {
+  color: var(--color-black);
+  background-color: var(--color-white);
 }
