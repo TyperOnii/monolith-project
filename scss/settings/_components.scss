@@ -14,10 +14,16 @@
 }
 .button-show {
   padding-inline: 30px;
+  @include mobile {
+    padding-inline: 15px;
+  }
 }
 .button--accent {
   color: var(--color-white);
   background-color: var(--color-accent);
+  @include hover {
+    box-shadow: var(--box-shadow-accent);
+  }
 }
 .button-order {
   padding-inline: 18px;
@@ -49,6 +55,9 @@
 .button-price {
   height: 76px;
   padding-inline: 42px;
+  @include mobile {
+    padding-inline: 20px;
+  }
 }
 .button-look {
   height: 76px;

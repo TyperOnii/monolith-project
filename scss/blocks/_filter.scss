@@ -10,7 +10,9 @@
     margin-top: 150px;
   }
   &__form {
-    background-color: rgb(39, 39, 39);
+    border-radius: 5px;
+    color: var(--color-black);
+    background-color: var(--color-grey-light);
     padding-block: 20px;
     padding-inline: 10px;
   }
