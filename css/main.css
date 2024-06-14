@@ -2462,6 +2462,7 @@ input::-webkit-inner-spin-button {
 }
 
 .successful {
+  min-width: 300px;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -2476,7 +2477,10 @@ input::-webkit-inner-spin-button {
   gap: 15px;
 }
 .successful__title {
-  font-size: clamp(20px, 2.4305555556vw, 35px);
+  font-size: clamp(22px, 2.0833333333vw, 30px);
+}
+.successful__descr {
+  font-size: clamp(16px, 1.25vw, 18px);
 }
 .successful__button {
   display: flex;

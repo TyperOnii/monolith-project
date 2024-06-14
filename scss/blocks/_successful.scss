@@ -1,4 +1,5 @@
 .successful {
+  min-width: 300px;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -16,10 +17,11 @@
   }
 
   &__title {
-    @include fluid-text(35, 20);
+    @include fluid-text(30, 22);
   }
 
   &__descr {
+    @include fluid-text(18, 16);
   }
 
   &__button {
